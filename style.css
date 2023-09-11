@@ -1,0 +1,61 @@
+body {
+    background-color: #ededed;
+}
+
+.container-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    background-color: #c7c1c1;
+    padding: 35px;
+    border: black 1px solid;
+    border-radius: 8px;
+    box-shadow: black 5px 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.number-button, .sign-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 85px;
+    border: black 1px solid;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #ededed;
+}
+
+
+
+.display {
+    display: flex;
+    justify-content: end;
+    width: 330px;
+    height: auto;
+    height:190px;
+    background-color: lightgray;
+    font-size: 50px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
