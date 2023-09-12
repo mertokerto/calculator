@@ -33,7 +33,7 @@ body {
     gap: 10px;
 }
 
-.number-button, .sign-button {
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,17 +45,34 @@ body {
     background-color: #ededed;
 }
 
-
+.button:hover {
+    scale: 1.1;
+    background-color: rgb(161, 155, 147);
+}
 
 .display {
     display: flex;
     justify-content: end;
     width: 330px;
     height: auto;
-    height:190px;
+    height: 190px;
     background-color: lightgray;
     font-size: 50px;
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.ft-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 25px;
+}
