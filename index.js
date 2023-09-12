@@ -8,40 +8,28 @@ let result = "";
 function add(firstParam, secondParam) {
     result = firstParam + secondParam;
     display.textContent = result;
-    firstParam = "";
-    secondParam = "";
-    sign = "";
-    result = "";
+    clearWorkingTree();
     return result;
 }
 
 function subtract(firstParam, secondParam) {
     result = firstParam - secondParam;
     display.textContent = result;
-    firstParam = "";
-    secondParam = "";
-    sign = "";
-    result = "";
+    clearWorkingTree();
     return result;
 }
 
 function multiply(firstParam, secondParam) {
     result = firstParam * secondParam;
     display.textContent = result;
-    firstParam = "";
-    secondParam = "";
-    sign = "";
-    result = "";
+    clearWorkingTree();
     return result;
 }
 
 function divide(firstParam, secondParam) {
     result = firstParam / secondParam;
     display.textContent = result;
-    firstParam = "";
-    secondParam = "";
-    sign = "";
-    result = "";
+    clearWorkingTree();
     return result;
 }
 
@@ -99,6 +87,7 @@ function displayEquation(input) {
     if (display.textContent === "0") {
         display.textContent = input;
     } else if (display.textContent == result) {
+        clearDisplay();
         display.textContent = firstParam;
     } else {
         display.textContent += input;
@@ -107,7 +96,11 @@ function displayEquation(input) {
 
 function clearDisplay() {
     display.textContent = "0";
+}
+
+function clearWorkingTree() {
     firstParam = "";
     secondParam = "";
     sign = "";
+    signBool = false;
 }
